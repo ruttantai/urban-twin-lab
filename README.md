@@ -1,43 +1,29 @@
 ﻿# Urban Twin Lab
 
-A digital twin dashboard for city operations to simulate traffic, energy, and emergency response scenarios.
+Urban Twin Lab is a full stack simulation dashboard for city operations. It visualizes traffic, energy, and emergency response scenarios so teams can test decisions before deploying them in the real world.
 
-## Why this project stands out
-- Demonstrates depth in UX + Data + Full Stack.
-- Designed as a production-style portfolio case with measurable outcomes.
-- Includes architecture, roadmap, and implementation scaffolding that can be expanded quickly.
+This project is aimed at showing product thinking, data modeling, and interactive UI implementation together.
 
-## Primary focus
-- UX + Data + Full Stack
+## Focus
+- Full stack data product with simulation workflows
 
-## Tech stack
+## Stack
 - SvelteKit, Rust API, TimescaleDB, MapLibre, WebGL
 
-## Portfolio goals
-- Build a realistic end-to-end system, not just a demo.
-- Show technical decision-making and tradeoff thinking.
-- Showcase clean architecture, testing strategy, and delivery readiness.
+## What I want this repo to demonstrate
+- Geospatial and time-series data handling
+- A responsive interface for complex operational data
+- Service design that supports simulation and comparison
 
-## Starter project structure
-- docs/: Product spec, architecture, ADRs
-- src/: Core implementation
-- tests/: Unit, integration, and e2e test suites
-- infra/: Deployment and infrastructure manifests
-- scripts/: Developer automation scripts
+## Starter structure
+- docs/: Use cases, architecture, and milestone plan
+- src/: UI and API implementation
+- tests/: Logic, API, and scenario validation tests
+- infra/: Runtime configuration and deployment files
+- scripts/: Data import and developer tooling scripts
 
-## Initial milestones
-1. Define product and technical scope in docs.
-2. Implement a thin vertical slice from user interaction to data persistence.
-3. Add CI checks and observability baseline.
-4. Publish demo assets and architecture diagrams.
-
-## Suggested demo narrative for recruiters
-- Problem: A realistic operational challenge with business impact.
-- Approach: Modern architecture with pragmatic tradeoffs.
-- Result: A maintainable, extensible system with clear product value.
-
-## Next implementation tasks
-- [ ] Write docs/architecture.md and docs/roadmap.md.
-- [ ] Implement core domain models and APIs.
-- [ ] Add seed data and test fixtures.
-- [ ] Add CI workflow and release checklist.
+## First build plan
+1. Implement map layers and baseline scenario model.
+2. Add simulation controls and side-by-side comparison mode.
+3. Build time-series ingestion and query endpoints.
+4. Add performance profiling and UX refinements.
