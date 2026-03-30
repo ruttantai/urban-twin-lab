@@ -1,29 +1,32 @@
 ﻿# Urban Twin Lab
 
-Urban Twin Lab is a full stack simulation dashboard for city operations. It visualizes traffic, energy, and emergency response scenarios so teams can test decisions before deploying them in the real world.
+Urban Twin Lab is a city operations simulation workspace. It combines a map-driven web interface with a Rust API for scenario state and time-series ingestion.
 
-This project is aimed at showing product thinking, data modeling, and interactive UI implementation together.
+## Current scope
+- Define simulation scenarios
+- Compare baseline and proposed interventions
+- Track key metrics over time
 
-## Focus
-- Full stack data product with simulation workflows
+## Tech stack
+- Frontend: SvelteKit + MapLibre + WebGL
+- Backend: Rust API
+- Data: TimescaleDB
 
-## Stack
-- SvelteKit, Rust API, TimescaleDB, MapLibre, WebGL
+## Repository layout
+- docs/: scenario model and architecture notes
+- src/web/: Svelte app
+- src/api/: Rust service
+- tests/: scenario and API checks
+- infra/: database and deployment assets
+- scripts/: data import and tooling scripts
 
-## What I want this repo to demonstrate
-- Geospatial and time-series data handling
-- A responsive interface for complex operational data
-- Service design that supports simulation and comparison
+## Quick start
+1. Run Rust API from src/api.
+2. Run Svelte app from src/web.
+3. Use the default scenario form and inspect API responses.
 
-## Starter structure
-- docs/: Use cases, architecture, and milestone plan
-- src/: UI and API implementation
-- tests/: Logic, API, and scenario validation tests
-- infra/: Runtime configuration and deployment files
-- scripts/: Data import and developer tooling scripts
-
-## First build plan
-1. Implement map layers and baseline scenario model.
-2. Add simulation controls and side-by-side comparison mode.
-3. Build time-series ingestion and query endpoints.
-4. Add performance profiling and UX refinements.
+## Roadmap
+1. Add map layers and simulation playback.
+2. Add TimescaleDB integration for metrics history.
+3. Add scenario comparison and export.
+4. Add performance tuning for high-volume map rendering.
